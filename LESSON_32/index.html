@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson 32-поисковик_картинок</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<header>
+		<div class="search">
+			<form action="">
+				<input type="text" placeholder="search.." name="search" size="75">
+				<input type="submit" value="Искать...">
+			</form>
+		</div>
+	</header>
+	
+	<main>
+		<div class="content">
+			
+			<div class="items">
+				<img src="https://www.airbaltic.com/website/var/tmp/image-thumbnails/1999720000/1999725178/thumb__GalleryLarge/bombardier_cs300_2.jpeg" alt="">
+				<div class="img_option">
+					<p class="name">Самолет в небе</p>
+					<a href="https://www.airbaltic.com/website/var/tmp/image-thumbnails/1999720000/1999725178/thumb__GalleryLarge/bombardier_cs300_2.jpeg" download>Скачать файл</a>
+				</div>
+			</div>
+
+			<div class="items">
+				<img src="img/bombardier_cs300_3.jpg" alt="">
+			    <div class="img_option">
+					<p class="name">Самолет в небе</p>
+					<form action="">
+						<input type="button" value="download..." onclick="window.location.href='img/bombardier_cs300_3.jpg'">
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</main>
+
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+
+.search input {
+	padding: 15px;
+	margin: 20px;
+}
+
+main {
+	position: relative;
+	margin: 10px;
+	background: #ffc;
+}
+
+.content {
+	display: flex;
+	width: 100%;
+	/*width: 1000px;*/
+	margin: 0;
+	height: 90vh;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+	/*background-image: url("../img/eeee.jpg");*/
+	
+}
+
+/*.content:after {
+  content: "";
+  background: url("../img/eeee.jpg");
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+*/
+.items {
+	padding: 0 20px;
+	background: #dff;
+	margin: 5px;
+}
+
+img {
+	width: 200px;
+	margin-top: 30px;
+}
+
+.img_option {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
