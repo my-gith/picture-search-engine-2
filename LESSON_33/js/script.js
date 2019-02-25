@@ -3,7 +3,7 @@ $(function(){
 	$('.search form').submit(function() {
 		var search = $(this).find('input[name="search"]').val();
 
-		alert(search);
+		// alert(search);
 
 
 	 	$.ajax({
@@ -17,7 +17,9 @@ $(function(){
 			//count:10
 			//}
 			success: function(json) {
-			$( "div" ).remove( ".items" );
+			// $( ".content" ).remove( ".items" );//не работает
+			// $( "div" ).remove( ".items" );
+			$( ".items" ).remove();
 			console.log(json);
 			//json.data.result.items
 
@@ -29,7 +31,7 @@ $(function(){
 					var thumb = json.data.result.items[i].thumbnail;
 
 				
-					$('.content').append('<div class="items"><img src="'+full+'"><div class="img_option"><p class="name">'+title+'</p>');
+					$('.content').append('<div class="items"><img src="'+full+'"><div class="img_option"><p class="name">'+title+'</p><a href="'+full+'" download>Скачать файл</a>');
 				}
 			}
 		});
